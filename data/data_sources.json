@@ -1,0 +1,251 @@
+{
+  "earth_sources": [
+    {
+      "name": "NASA POWER",
+      "agency": "NASA Langley Research Center",
+      "full_name": "Prediction Of Worldwide Energy Resources",
+      "sensor": "GEOS / CERES Assimilation Models",
+      "mission": "NASA Earth Science Division",
+      "integration_status": "api_accessed",
+      "status_label": "Live REST API Integration",
+      "parameters": [
+        "T2M (Temperature at 2 Meters, °C)",
+        "T2M_MAX / T2M_MIN",
+        "ALLSKY_SFC_SW_DWN (Solar Irradiance, kW-hr/m^2/day)",
+        "PRECTOTCORR (Precipitation, mm/day)",
+        "PS (Surface Pressure, kPa)",
+        "RH2M (Relative Humidity, %)"
+      ],
+      "spatial_resolution": "0.5° x 0.5° (~55 km at equator)",
+      "resolution": "0.5° x 0.5° (~55 km at equator)",
+      "temporal_coverage": "1981 - Present (Daily & Climatology)",
+      "access_protocol": "REST API (Public endpoint, no auth required)",
+      "endpoint_url": "https://power.larc.nasa.gov/api/temporal/climatology/point",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/climatology/point",
+      "provider": "NASA Langley Research Center",
+      "citation": "Stackhouse, P. W., et al. (2020). The NASA POWER Project: Earth science data for renewable energy, sustainable building design, and agroclimatology. NASA Technical Reports."
+    },
+    {
+      "name": "NASA SRTM",
+      "agency": "NASA JPL / NGA",
+      "full_name": "Shuttle Radar Topography Mission (SRTM v3.0 / SRTM Plus)",
+      "sensor": "SIR-C/X-SAR Imaging Radar",
+      "mission": "Space Shuttle Endeavour (STS-99)",
+      "integration_status": "downloaded_and_processed",
+      "status_label": "Processed Regional Sample Data",
+      "parameters": [
+        "Elevation (Orthometric Height in meters above EGM96 Geoid)",
+        "Relative Relief",
+        "Slope"
+      ],
+      "spatial_resolution": "1 arc-second (~30 meters global)",
+      "resolution": "1 arc-second (~30 meters global)",
+      "temporal_coverage": "February 2000 mission flight",
+      "access_protocol": "USGS EarthExplorer / OpenTopography API / LP DAAC",
+      "endpoint_url": "https://earthexplorer.usgs.gov",
+      "source_url": "https://earthexplorer.usgs.gov",
+      "provider": "NASA JPL / NGA",
+      "citation": "Farr, T. G., et al. (2007). The Shuttle Radar Topography Mission. Reviews of Geophysics, 45(2)."
+    },
+    {
+      "name": "NASA ASTER GDEM",
+      "agency": "NASA / METI Japan",
+      "full_name": "Advanced Spaceborne Thermal Emission and Reflection Radiometer Global DEM v3",
+      "sensor": "ASTER Optical/TIR Radiometer",
+      "mission": "Terra Spacecraft (EOS AM-1)",
+      "integration_status": "externally_referenced",
+      "status_label": "Referenced Archive Product",
+      "parameters": [
+        "Digital Elevation Model (meters)",
+        "Surface Reflectance VNIR/SWIR/TIR"
+      ],
+      "spatial_resolution": "1 arc-second (~30 meters)",
+      "resolution": "1 arc-second (~30 meters)",
+      "temporal_coverage": "2000 - Present",
+      "access_protocol": "NASA Earthdata / LP DAAC",
+      "endpoint_url": "https://doi.org/10.5067/ASTER/ASTGTM.003",
+      "source_url": "https://doi.org/10.5067/ASTER/ASTGTM.003",
+      "provider": "NASA Earthdata / LP DAAC",
+      "citation": "Abrams, M., et al. (2020). ASTER Global Digital Elevation Model (GDEM) Version 3. Remote Sensing, 12(7), 1156."
+    },
+    {
+      "name": "NASA MODIS",
+      "agency": "NASA Goddard Space Flight Center",
+      "full_name": "Moderate Resolution Imaging Spectroradiometer (Terra/Aqua)",
+      "sensor": "MODIS Spectroradiometer",
+      "mission": "Terra & Aqua Spacecraft",
+      "integration_status": "externally_referenced",
+      "status_label": "Referenced Archive Product",
+      "parameters": [
+        "MOD11A1 / MYD11A1 Land Surface Temperature (LST)",
+        "Emissivity",
+        "NDVI"
+      ],
+      "spatial_resolution": "1000 meters / 250 meters",
+      "resolution": "1000 meters / 250 meters",
+      "temporal_coverage": "2000 - Present (Daily)",
+      "access_protocol": "NASA LP DAAC / AppEEARS",
+      "endpoint_url": "https://lpdaac.usgs.gov/products/mod11a1v061/",
+      "source_url": "https://lpdaac.usgs.gov/products/mod11a1v061/",
+      "provider": "NASA Goddard Space Flight Center",
+      "citation": "Wan, Z. (2014). New refinements and validation of the collection-6 MODIS land-surface temperature/emissivity product. Remote Sensing of Environment, 140, 36-45."
+    },
+    {
+      "name": "ESA Copernicus Sentinel-2",
+      "agency": "European Space Agency (ESA)",
+      "full_name": "Sentinel-2 MultiSpectral Instrument (MSI) Level-2A",
+      "sensor": "MultiSpectral Instrument (MSI)",
+      "mission": "Sentinel-2 Constellation",
+      "integration_status": "externally_referenced",
+      "status_label": "Referenced Archive Product",
+      "parameters": [
+        "Bottom of Atmosphere (BOA) Surface Reflectance (13 spectral bands)",
+        "Mineral Index",
+        "Salinity Index"
+      ],
+      "spatial_resolution": "10m, 20m, 60m",
+      "resolution": "10m, 20m, 60m",
+      "temporal_coverage": "2015 - Present (5-day revisit)",
+      "access_protocol": "Copernicus Data Space Ecosystem / AWS Registry of Open Data",
+      "endpoint_url": "https://dataspace.copernicus.eu",
+      "source_url": "https://dataspace.copernicus.eu",
+      "provider": "European Space Agency (ESA)",
+      "citation": "Drusch, M., et al. (2012). Sentinel-2: ESA's optical high-resolution mission for GMES operational services. Remote Sensing of Environment, 120, 25-36."
+    }
+  ],
+  "planetary_sources": [
+    {
+      "body": "Moon",
+      "instrument": "NASA LOLA",
+      "spacecraft": "Lunar Reconnaissance Orbiter (LRO)",
+      "full_name": "Lunar Orbiter Laser Altimeter",
+      "integration_status": "downloaded_and_processed",
+      "status_label": "Processed Regional Profile Data",
+      "pds_node": "PDS Geosciences Node (Washington University in St. Louis)",
+      "dataset_id": "LRO-L-LOLA-4-GDR-V1.0",
+      "parameters": [
+        "Topography (Radius in meters relative to 1737.4 km datum)",
+        "Slope (degrees)",
+        "RMS Roughness",
+        "Surface Reflectance at 1064 nm"
+      ],
+      "resolution": "5 to 20 meters/pixel at Lunar South Pole; 118 m/px global",
+      "units": "meters, degrees, unitless reflectance",
+      "archive_url": "https://pds-geosciences.wustl.edu/missions/lro/lola.htm",
+      "citation": "Smith, D. E., et al. (2010). Initial observations from the Lunar Orbiter Laser Altimeter (LOLA). Geophysical Research Letters, 37(18)."
+    },
+    {
+      "body": "Moon",
+      "instrument": "NASA LROC",
+      "spacecraft": "Lunar Reconnaissance Orbiter (LRO)",
+      "full_name": "Lunar Reconnaissance Orbiter Camera (NAC & WAC)",
+      "integration_status": "externally_referenced",
+      "status_label": "Referenced PDS Imaging Archive",
+      "pds_node": "PDS Imaging Node (USGS Astrogeology / ASU)",
+      "dataset_id": "LRO-L-LROC-2-EDR-V1.0 / RDR",
+      "parameters": [
+        "Sub-meter panchromatic morphology",
+        "7-band UV/VIS multispectral color",
+        "Digital Terrain Models"
+      ],
+      "resolution": "0.5 meters/pixel (NAC); 100 meters/pixel (WAC)",
+      "units": "Radiance / I/F reflectance",
+      "archive_url": "https://pds.lroc.asu.edu/",
+      "citation": "Robinson, M. S., et al. (2010). Lunar Reconnaissance Orbiter Camera (LROC) instrument overview. Space Science Reviews, 150(1-4), 81-124."
+    },
+    {
+      "body": "Moon",
+      "instrument": "NASA Diviner",
+      "spacecraft": "Lunar Reconnaissance Orbiter (LRO)",
+      "full_name": "Diviner Lunar Radiometer Experiment",
+      "integration_status": "planned_future_integration",
+      "status_label": "Planned Cloud Raster Integration",
+      "pds_node": "PDS Geosciences Node (UCLA / JPL)",
+      "dataset_id": "LRO-L-DLRE-4-GDR-V1.0",
+      "parameters": [
+        "Bolometric brightness temperature (K)",
+        "Thermal inertia",
+        "Christiansen Feature (silicate composition)",
+        "Rock abundance (%)"
+      ],
+      "resolution": "200 to 500 meters/pixel polar grids",
+      "units": "Kelvin (K), J m^-2 K^-1 s^-0.5, micrometers (um)",
+      "archive_url": "https://pds-geosciences.wustl.edu/missions/lro/diviner.htm",
+      "citation": "Paige, D. A., et al. (2010). Diviner Lunar Radiometer Experiment. Space Science Reviews, 150(1-4), 125-160."
+    },
+    {
+      "body": "Mars",
+      "instrument": "NASA MOLA",
+      "spacecraft": "Mars Global Surveyor (MGS)",
+      "full_name": "Mars Orbiter Laser Altimeter",
+      "integration_status": "downloaded_and_processed",
+      "status_label": "Processed Regional Profile Data",
+      "pds_node": "PDS Geosciences Node",
+      "dataset_id": "MGS-M-MOLA-5-MEGDR-L3-V1.0",
+      "parameters": [
+        "Planetary elevation relative to MOLA areoid datum (meters)",
+        "Areal roughness",
+        "1064 nm surface reflectivity"
+      ],
+      "resolution": "128 pixels/degree (~463 meters/pixel at equator)",
+      "units": "meters",
+      "archive_url": "https://pds-geosciences.wustl.edu/missions/mgs/mola.htm",
+      "citation": "Zuber, M. T., et al. (1992). The Mars Observer laser altimeter investigation. J. Geophys. Res., 97(E5), 7781-7797."
+    },
+    {
+      "body": "Mars",
+      "instrument": "NASA THEMIS",
+      "spacecraft": "2001 Mars Odyssey",
+      "full_name": "Thermal Emission Imaging System",
+      "integration_status": "externally_referenced",
+      "status_label": "Referenced PDS Imaging Archive",
+      "pds_node": "PDS Imaging Node (Arizona State University)",
+      "dataset_id": "ODY-M-THM-5-IRBDR-V1.0",
+      "parameters": [
+        "Day/Night Infrared brightness temperature",
+        "Thermal inertia (J m^-2 K^-1 s^-0.5)",
+        "Silicate and chloride mineral discrimination"
+      ],
+      "resolution": "100 meters/pixel (IR); 18 meters/pixel (VIS)",
+      "units": "Kelvin, thermal inertia units (tiu)",
+      "archive_url": "https://themis.asu.edu/data",
+      "citation": "Christensen, P. R., et al. (2004). The Thermal Emission Imaging System (THEMIS) for the Mars 2001 Odyssey Mission. Space Science Reviews, 110(1-2), 85-130."
+    },
+    {
+      "body": "Mars",
+      "instrument": "NASA CRISM",
+      "spacecraft": "Mars Reconnaissance Orbiter (MRO)",
+      "full_name": "Compact Reconnaissance Imaging Spectrometer for Mars",
+      "integration_status": "externally_referenced",
+      "status_label": "Referenced PDS Geosciences Archive",
+      "pds_node": "PDS Geosciences Node (JHU-APL)",
+      "dataset_id": "MRO-M-CRISM-3-RDR-TARGETED-V1.0",
+      "parameters": [
+        "Hyperspectral surface reflectance (0.36 to 3.92 micrometers across 544 channels)",
+        "Mineral parameter maps (smectite, carbonate, olivine, sulfate)"
+      ],
+      "resolution": "18 meters/pixel in targeted FRT / HRL modes",
+      "units": "I/F (Reflectance factor / summary spectral indices)",
+      "archive_url": "https://pds-geosciences.wustl.edu/missions/mro/crism.htm",
+      "citation": "Murchie, S., et al. (2007). Compact Reconnaissance Imaging Spectrometer for Mars (CRISM) on Mars Reconnaissance Orbiter (MRO). J. Geophys. Res., 112(E5)."
+    },
+    {
+      "body": "Mars",
+      "instrument": "NASA HiRISE",
+      "spacecraft": "Mars Reconnaissance Orbiter (MRO)",
+      "full_name": "High Resolution Imaging Science Experiment",
+      "integration_status": "planned_future_integration",
+      "status_label": "Planned Stereo DTM Integration",
+      "pds_node": "PDS Imaging Node (University of Arizona)",
+      "dataset_id": "MRO-M-HIRISE-3-RDR-V1.0",
+      "parameters": [
+        "Sub-meter visible imaging (Red, Blue-Green, NIR bands)",
+        "Stereo Digital Terrain Models (DTMs)"
+      ],
+      "resolution": "0.25 to 0.30 meters/pixel",
+      "units": "DN, I/F reflectance, meter elevation in DTMs",
+      "archive_url": "https://hirise.lpl.arizona.edu/data/",
+      "citation": "McEwen, A. S., et al. (2007). Mars Reconnaissance Orbiter's High Resolution Imaging Science Experiment (HiRISE). J. Geophys. Res., 112(E5)."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+# Byte-compiled / optimized / cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments & Virtual Envs
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit secrets & local config
+.streamlit/secrets.toml
+.streamlit/config.toml.local
+
+# Sensitive environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# External reference template (downloaded template build files)
+reference_dashboard/
+
+# Temporary, scratch & log files
+*.log
+*.tmp
+*.bak
+scratch/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# IDE & Editor folders
+.idea/
+.vscode/
+*.swp
+*.swo

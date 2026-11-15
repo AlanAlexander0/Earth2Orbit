@@ -1,0 +1,12 @@
+# Earth2Orbit — Planetary Analog Explorer
+# NASA Space Apps Challenge 2026 // Team QuantumBoyzz
+# Core Dependencies for Python 3.12 & Streamlit Community Cloud Compatibility
+
+streamlit>=1.35.0
+pandas>=2.0.0
+numpy>=1.24.0
+plotly>=5.18.0
+folium>=0.16.0
+streamlit-folium>=0.20.0
+requests>=2.31.0
+reportlab>=4.0.0

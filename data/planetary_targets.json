@@ -1,0 +1,343 @@
+{
+  "bodies": [
+    {
+      "body_id": "moon",
+      "body_name": "The Moon (Luna)",
+      "classification": "Terrestrial Planetary Satellite / Airless Basaltic & Highland Body",
+      "radius_km": 1737.4,
+      "gravity_m_s2": 1.62,
+      "surface_pressure_hpa": null,
+      "surface_pressure_note": "Not Available (Ultra-high vacuum regime < 10^-12 hPa; no bulk atmosphere)",
+      "liquid_water": null,
+      "liquid_water_note": "Not Available (Liquid water thermodynamically unstable at surface vacuum; sequestered as cryogenic solid volatile ice in PSRs)",
+      "radiation_regime": "Unattenuated galactic cosmic rays (GCR) and solar particle events (SPE)",
+      "targets": [
+        {
+          "id": "lunar_south_pole_shackleton",
+          "name": "Lunar South Pole: Shackleton Crater Rim",
+          "target_code": "LSP-SHACKLETON",
+          "artemis_candidate": true,
+          "coordinates": {
+            "latitude": -89.90,
+            "longitude": 0.00
+          },
+          "elevation_m": 1250,
+          "elevation_reference": "LOLA datum (radius 1737.4 km)",
+          "relief_m": 4200,
+          "mean_slope_deg": 28.5,
+          "terrain_roughness_rms_m": 1.45,
+          "temperature_k": {
+            "min_psr": 40.0,
+            "mean": 180.0,
+            "max_illuminated": 290.0,
+            "diurnal_swing_k": 250.0
+          },
+          "temperature_c": {
+            "min_psr": -233.15,
+            "mean": -93.15,
+            "max_illuminated": 16.85,
+            "diurnal_swing": 250.0
+          },
+          "geology": {
+            "lithology_type": "Highland Anorthositic Impact Breccia & Regolith",
+            "stratigraphy": "Pre-Nectarian / Nectarian impact basin ejecta (South Pole-Aitken basin margin) overlain by Shackleton impact structure (~3.6 Ga)",
+            "dominant_minerals": [
+              "Calcic Plagioclase Feldspar (Anorthite An94-98)",
+              "Pyroxene (Orthopyroxene / Pigeonite)",
+              "Olivine trace",
+              "Ilmenite trace",
+              "Cryogenic Volatile Water Ice (H2O / OH) in Permanently Shadowed Regions (PSRs)",
+              "Micrometeorite impact glass agglutinates"
+            ],
+            "geomorphic_features": [
+              "Sharp crater rim crest (21 km diameter)",
+              "Steep inner wall slopes (>30 degrees) subject to mass wasting",
+              "Permanently Shadowed Regions (PSRs) receiving zero direct sunlight for billions of years",
+              "Adjacent Connecting Ridge exhibiting high seasonal illumination (>86% sunlight)"
+            ]
+          },
+          "key_scientific_questions": [
+            "What is the concentration, isotopic signature, and physical form of volatile ice trapped within the PSR?",
+            "How does regolith gardening by micrometeoroid impact affect volatile preservation?",
+            "How can astronaut habitats and mobility systems navigate 30-degree slopes in cryogenic shadowed conditions?"
+          ],
+          "instruments": [
+            {
+              "instrument": "NASA LOLA (Lunar Orbiter Laser Altimeter)",
+              "spacecraft": "Lunar Reconnaissance Orbiter (LRO)",
+              "measurement": "Precision topographic elevation, slope, RMS roughness (5-20 m/px)",
+              "dataset_id": "LOLA_GDR_POLAR"
+            },
+            {
+              "instrument": "NASA Diviner Lunar Radiometer Experiment",
+              "spacecraft": "LRO",
+              "measurement": "9-channel infrared surface brightness temperature (50-400 K) and thermal inertia",
+              "dataset_id": "DIVINER_GDR_TEMP"
+            },
+            {
+              "instrument": "NASA LROC (Narrow Angle Camera / NAC)",
+              "spacecraft": "LRO",
+              "measurement": "Sub-meter panchromatic high-resolution morphology (0.5 m/px)",
+              "dataset_id": "LROC_NAC_EDR"
+            },
+            {
+              "instrument": "NASA Mini-RF & Chandrayaan-1 M3",
+              "spacecraft": "LRO / Chandrayaan-1",
+              "measurement": "Radar circular polarization ratio (CPR) and 0.43-3.0 um NIR water-ice absorption bands",
+              "dataset_id": "M3_SPECTRAL_REFLECTANCE"
+            }
+          ],
+          "data_confidence": {
+            "topography": 0.98,
+            "temperature": 0.95,
+            "geology": 0.88,
+            "mineralogy": 0.82,
+            "overall": 0.91,
+            "confidence_notes": "Orbital laser altimetry and thermal radiometry are exceptionally high resolution; subsurface ice distribution and in-situ mineralogy await direct surface verification by Artemis astronauts."
+          }
+        },
+        {
+          "id": "lunar_south_pole_malapert",
+          "name": "Lunar South Pole: Malapert Mountain (Plateau)",
+          "target_code": "LSP-MALAPERT",
+          "artemis_candidate": true,
+          "coordinates": {
+            "latitude": -84.90,
+            "longitude": 12.90
+          },
+          "elevation_m": 5100,
+          "elevation_reference": "LOLA datum (radius 1737.4 km)",
+          "relief_m": 3500,
+          "mean_slope_deg": 12.0,
+          "terrain_roughness_rms_m": 0.98,
+          "temperature_k": {
+            "min_psr": 85.0,
+            "mean": 210.0,
+            "max_illuminated": 305.0,
+            "diurnal_swing_k": 220.0
+          },
+          "temperature_c": {
+            "min_psr": -188.15,
+            "mean": -63.15,
+            "max_illuminated": 31.85,
+            "diurnal_swing": 220.0
+          },
+          "geology": {
+            "lithology_type": "Pre-Nectarian Highland Anorthositic Ridge",
+            "stratigraphy": "Massive South Pole-Aitken (SPA) basin rim mountain block elevated over 5 km",
+            "dominant_minerals": [
+              "Ferroan Anorthosite (Plagioclase An95)",
+              "Noritic Anorthosite",
+              "Pyroxene (Enstatite-Augite series)",
+              "Impact glass agglutinates"
+            ],
+            "geomorphic_features": [
+              "Elevated highland plateau massif",
+              "High solar illumination peak (>89% summer sunlight)",
+              "Continuous direct line-of-sight to Earth for deep space communications",
+              "Moderate summit slopes (5-15 deg) favorable for landing architecture"
+            ]
+          },
+          "key_scientific_questions": [
+            "Does the summit expose primordial crust from the pre-Nectarian South Pole-Aitken impact event?",
+            "Is Malapert optimal as an astronomical lunar far-side radio observatory and communications relay node?"
+          ],
+          "instruments": [
+            {
+              "instrument": "NASA LOLA",
+              "spacecraft": "LRO",
+              "measurement": "High-resolution topographic relief and slope maps",
+              "dataset_id": "LOLA_DEM_20M"
+            },
+            {
+              "instrument": "NASA Diviner",
+              "spacecraft": "LRO",
+              "measurement": "Day/night thermal profiles and rock abundance mapping",
+              "dataset_id": "DIVINER_ROCK_ABUNDANCE"
+            }
+          ],
+          "data_confidence": {
+            "topography": 0.98,
+            "temperature": 0.94,
+            "geology": 0.85,
+            "mineralogy": 0.80,
+            "overall": 0.89,
+            "confidence_notes": "Well mapped by LRO orbital instruments; lack of in-situ sampling limits petrological certainty."
+          }
+        }
+      ]
+    },
+    {
+      "body_id": "mars",
+      "body_name": "Mars",
+      "classification": "Terrestrial Silicate Planet with Thin CO2 Atmosphere",
+      "radius_km": 3389.5,
+      "gravity_m_s2": 3.72,
+      "surface_pressure_hpa": 6.1,
+      "surface_pressure_note": "Mean 6.1 hPa (610 Pa); ranges seasonally from 5.8 to 7.5 hPa due to polar CO2 cap condensation/sublimation",
+      "liquid_water": null,
+      "liquid_water_note": "Not Available at present day surface (below triple point in most regimes; transient metastable brines hypothesized)",
+      "radiation_regime": "High solar UV-A, UV-B, UV-C (unshielded by thin CO2 column; no ozone layer); galactic cosmic rays",
+      "targets": [
+        {
+          "id": "mars_jezero_delta",
+          "name": "Jezero Crater: Western Fan & Delta",
+          "target_code": "JEZERO-DELTA",
+          "coordinates": {
+            "latitude": 18.3800,
+            "longitude": 77.5800
+          },
+          "elevation_m": -2450,
+          "elevation_reference": "MOLA Areoid Datum",
+          "relief_m": 450,
+          "mean_slope_deg": 8.5,
+          "terrain_roughness_rms_m": 0.48,
+          "temperature_k": {
+            "min_diurnal": 185.0,
+            "mean": 215.0,
+            "max_diurnal": 288.0,
+            "diurnal_swing_k": 103.0
+          },
+          "temperature_c": {
+            "min_diurnal": -88.15,
+            "mean": -58.15,
+            "max_diurnal": 14.85,
+            "diurnal_swing": 103.0
+          },
+          "geology": {
+            "lithology_type": "Lacustrine Siltstones, Fluvial Sandstones & Clays",
+            "stratigraphy": "Late Noachian / Early Hesperian lacustrine delta deposits prograding into an open-basin impact lake (~3.7 Ga)",
+            "dominant_minerals": [
+              "Fe/Mg Smectite Clays (Nontronite / Saponite)",
+              "Mg-Carbonates (Magnesite / Siderite)",
+              "Hydrated Silica / Opaline Silica",
+              "Detrital Olivine & Pyroxene",
+              "Calcium Sulfate veins (Gypsum / Bassanite)",
+              "Amorphous silicate phases"
+            ],
+            "geomorphic_features": [
+              "Classic curved deltaic distributary channel networks",
+              "Prominent erosional delta scarp (~60 m high)",
+              "Neretva Vallis breach inlet canyon",
+              "Eolian transverse aeolian ridges (TARs) and sand ripples"
+            ]
+          },
+          "key_scientific_questions": [
+            "Are organic biosignatures preserved in the fine-grained clay and carbonate-rich mudstones?",
+            "What was the duration, chemistry, and habitability of the Jezero paleolake during the Noachian-Hesperian transition?",
+            "How do return-sample cores selected by Perseverance represent early Martian aqueous environments?"
+          ],
+          "instruments": [
+            {
+              "instrument": "NASA MOLA (Mars Orbiter Laser Altimeter)",
+              "spacecraft": "Mars Global Surveyor (MGS)",
+              "measurement": "Global elevation, crater basin depth, regional slopes",
+              "dataset_id": "MOLA_MEGDR"
+            },
+            {
+              "instrument": "NASA CRISM (Compact Reconnaissance Imaging Spectrometer for Mars)",
+              "spacecraft": "Mars Reconnaissance Orbiter (MRO)",
+              "measurement": "Hyperspectral VNIR identification of smectites, carbonates, and hydrated silica (18 m/px)",
+              "dataset_id": "CRISM_MTR_TARGETED"
+            },
+            {
+              "instrument": "NASA HiRISE (High Resolution Imaging Science Experiment)",
+              "spacecraft": "MRO",
+              "measurement": "0.25 m/px optical imaging showing strata layers and boulders",
+              "dataset_id": "HIRISE_EDR_RDR"
+            },
+            {
+              "instrument": "NASA THEMIS (Thermal Emission Imaging System)",
+              "spacecraft": "Mars Odyssey",
+              "measurement": "Thermal inertia mapping (100 m/px) discriminating bedrock from sand dunes",
+              "dataset_id": "THEMIS_IR_DAY_NIGHT"
+            },
+            {
+              "instrument": "Mars 2020 Perseverance Rover Science Payload",
+              "spacecraft": "Perseverance Rover (In-Situ)",
+              "measurement": "PIXL (micro-XRF), SHERLOC (deep-UV Raman), SuperCam (LIBS & VISIR), RIMFAX (radar)",
+              "dataset_id": "MARS2020_PDS_ARCHIVE"
+            }
+          ],
+          "data_confidence": {
+            "topography": 0.99,
+            "temperature": 0.97,
+            "geology": 0.98,
+            "mineralogy": 0.96,
+            "overall": 0.98,
+            "confidence_notes": "Exceptionally high confidence due to combination of multi-spacecraft orbital sensors and active in-situ rover ground-truth."
+          }
+        },
+        {
+          "id": "mars_jezero_seitah",
+          "name": "Jezero Crater: Séítah Formation (Crater Floor)",
+          "target_code": "JEZERO-SEITAH",
+          "coordinates": {
+            "latitude": 18.4200,
+            "longitude": 77.4400
+          },
+          "elevation_m": -2530,
+          "elevation_reference": "MOLA Areoid Datum",
+          "relief_m": 80,
+          "mean_slope_deg": 2.2,
+          "terrain_roughness_rms_m": 0.62,
+          "temperature_k": {
+            "min_diurnal": 180.0,
+            "mean": 214.0,
+            "max_diurnal": 292.0,
+            "diurnal_swing_k": 112.0
+          },
+          "temperature_c": {
+            "min_diurnal": -93.15,
+            "mean": -59.15,
+            "max_diurnal": 18.85,
+            "diurnal_swing": 112.0
+          },
+          "geology": {
+            "lithology_type": "Olivine Cumulate Basaltic Igneous Bedrock",
+            "stratigraphy": "Early igneous unit forming the basement floor of Jezero Crater, subsequently modified by aqueous alteration",
+            "dominant_minerals": [
+              "Magnesian Olivine (Fo70-80)",
+              "Pyroxene (Augite / Low-Ca pyroxene)",
+              "Fe-Mg Carbonate alteration rinds",
+              "Secondary Halite & Sulfate salts in vugs",
+              "Titanomagnetite / Chromite"
+            ],
+            "geomorphic_features": [
+              "Layered olivine-rich cumulate rock outcrops",
+              "Polygonal fractured pavement stones",
+              "Aeolian dark sand dunes (barchanoid ripples)",
+              "Ventifacts carved by Martian saltation"
+            ]
+          },
+          "key_scientific_questions": [
+            "Was the Séítah formation formed as a thick lava lake cumulate or a sub-volcanic layered mafic intrusion?",
+            "What do the carbonate alteration coatings reveal about early Martian groundwater and atmospheric CO2 sequestration?"
+          ],
+          "instruments": [
+            {
+              "instrument": "Mars 2020 PIXL (Planetary Instrument for X-ray Lithochemistry)",
+              "spacecraft": "Perseverance Rover",
+              "measurement": "Elemental micro-mapping (<120 um) verifying olivine cumulate petrology",
+              "dataset_id": "PIXL_CALIBRATED_SPECTRA"
+            },
+            {
+              "instrument": "NASA CRISM & HiRISE",
+              "spacecraft": "MRO",
+              "measurement": "Orbital olivine absorption band at 1.0 um and high-res outcrop mapping",
+              "dataset_id": "CRISM_OLIVINE_MAP"
+            }
+          ],
+          "data_confidence": {
+            "topography": 0.99,
+            "temperature": 0.96,
+            "geology": 0.98,
+            "mineralogy": 0.97,
+            "overall": 0.98,
+            "confidence_notes": "In-situ abrasion patches and sample cores (e.g., 'Dourbes' and 'Robine') have verified cumulate olivine petrology."
+          }
+        }
+      ]
+    }
+  ]
+}

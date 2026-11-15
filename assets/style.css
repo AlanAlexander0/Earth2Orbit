@@ -1,0 +1,1013 @@
+/* ==========================================================================
+   Earth2Orbit — Rhombus Design System
+   Exact visual styling reproduced from the Rhombus CRM Dashboard Template
+   Palette: Primary Purple (#775da6), Secondary Coral (#f9837c), Info Teal (#70b6c1),
+            Warning Gold (#f3cc5c), Surfaces (#ffffff, #f9f9f9), Text (#202020)
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  color-scheme: light;
+
+  /* Brand Colors from Rhombus */
+  --color-primary-lighter: #efecf4;
+  --color-primary-light: #a08cc2;
+  --color-primary: #775da6;
+  --color-primary-dark: #634c8d;
+  --color-primary-darker: #3d2f57;
+
+  --color-secondary-lighter: #feeeed;
+  --color-secondary-light: #ffb1b7;
+  --color-secondary: #f9837c;
+  --color-secondary-dark: #e86b64;
+  --color-secondary-darker: #8f3a35;
+
+  --color-info-lighter: #eaf5f7;
+  --color-info-light: #a3d1d8;
+  --color-info: #70b6c1;
+  --color-info-dark: #579ea9;
+  --color-info-darker: #2d5d65;
+
+  --color-warning-lighter: #fdf7e5;
+  --color-warning-light: #f8de95;
+  --color-warning: #f3cc5c;
+  --color-warning-dark: #dcb33f;
+  --color-warning-darker: #7d6419;
+
+  --color-danger-lighter: #feeeed;
+  --color-danger-light: #ffb1b7;
+  --color-danger: #f9837c;
+  --color-danger-dark: #e86b64;
+
+  /* Surfaces */
+  --background-color-default: #ffffff;
+  --background-color-subtle: #f9f9f9;
+  --background-color-muted: #f3f3f3;
+  --background-color-highlight: #ebebeb;
+  --background-color-emphasis: #dcdcdc;
+
+  /* Text — High Contrast for guaranteed readability */
+  --text-color-default: #202020;
+  --text-color-highlight: #202020;
+  --text-color-emphasis: #000000;
+  --text-color-muted: #555555;
+  --text-color-subtle: #767676;
+  --color-neutral: #202020;
+
+  /* Borders */
+  --border-color-default: #dcdcdc;
+  --border-color-subtle: #ececec;
+  --border-color-highlight: #c7c7c7;
+
+  /* Shadows */
+  --shadow-card: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+  --shadow-dropdown: 0 4px 16px 0 rgba(0, 0, 0, 0.10);
+
+  /* Layout */
+  --topbar-height: 4rem;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 10px;
+
+  /* Typography */
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, Menlo, Monaco, monospace;
+}
+
+/* Base resets & Streamlit main overrides */
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+html, body {
+  font-family: var(--font-sans) !important;
+  color: var(--text-color-default) !important;
+  background-color: var(--background-color-subtle) !important;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Explicitly apply typography to content containers without breaking icon font ligatures */
+.stApp, p, h1, h2, h3, h4, h5, h6, input, button, select, textarea, div[data-testid="stMarkdownContainer"] {
+  font-family: var(--font-sans) !important;
+}
+
+/* Safeguard Streamlit & Material icon fonts so icon ligatures (like arrow_drop_down) never render as raw text */
+[data-testid="stIconMaterial"],
+.material-symbols-rounded,
+.material-symbols-outlined,
+.material-symbols-sharp,
+.material-icons,
+[class*="material-symbols"] {
+  font-family: 'Material Symbols Rounded', 'Material Symbols Outlined', 'Material Icons', sans-serif !important;
+  font-feature-settings: 'liga' 1 !important;
+  text-rendering: optimizeLegibility !important;
+  letter-spacing: normal !important;
+}
+
+.stApp {
+  background-color: var(--background-color-subtle) !important;
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100vw !important;
+}
+
+/* Ensure header container is clean */
+header[data-testid="stHeader"] {
+  background-color: transparent !important;
+  z-index: 100 !important;
+}
+
+/* Main Container: No overflow, centered, generous breathing room */
+.main {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+.main .block-container {
+  padding-top: 1rem !important;
+  padding-bottom: 3rem !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+  max-width: 1400px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+  .main .block-container {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+}
+
+/* ==========================================================================
+   SIDEBAR (Rhombus 250px white navigation)
+   ========================================================================== */
+section[data-testid="stSidebar"] {
+  background-color: var(--background-color-default) !important;
+  border-right: 1px solid var(--border-color-default) !important;
+  overflow-x: hidden !important;
+  padding-top: 0 !important;
+}
+
+section[data-testid="stSidebar"] > div:first-child {
+  padding-top: 1rem !important;
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
+  overflow-x: hidden !important;
+}
+
+/* Rhombus Sidebar Brand Header */
+.rhombus-sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 3.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-color-subtle);
+  width: 100%;
+}
+
+.rhombus-sidebar-brand svg {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.rhombus-sidebar-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-color-default);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.rhombus-sidebar-tagline {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--text-color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Sidebar Navigation Radio Buttons (scoped strictly to sidebar) */
+section[data-testid="stSidebar"] div[data-testid="stRadio"] {
+  background: transparent !important;
+  margin-top: 0.25rem !important;
+  width: 100% !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] > label {
+  display: none !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 4px !important;
+  width: 100% !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label {
+  display: flex !important;
+  align-items: center !important;
+  min-height: 46px !important;
+  padding: 0 14px !important;
+  border-radius: var(--radius-lg) !important;
+  border: 1px solid transparent !important;
+  background-color: transparent !important;
+  color: var(--text-color-default) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease-in-out !important;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* Hide Streamlit radio circle in sidebar */
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label input {
+  display: none !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label div[data-testid="stMarkdownContainer"] {
+  width: 100% !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label div[data-testid="stMarkdownContainer"] p {
+  color: var(--text-color-default) !important;
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  margin: 0 !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label:hover {
+  background-color: var(--background-color-subtle) !important;
+}
+
+/* Active Navigation Item (Rhombus purple tint #efecf4) */
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked),
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label[data-checked="true"] {
+  background-color: var(--color-primary-lighter) !important;
+  border-left: 3px solid var(--color-primary) !important;
+}
+
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) p,
+section[data-testid="stSidebar"] div[data-testid="stRadio"] div[role="radiogroup"] label[data-checked="true"] p {
+  color: var(--color-primary-dark) !important;
+  font-weight: 600 !important;
+}
+
+/* Main Content Horizontal Radio / Segmented Controls (e.g., Planetary Body Selector) */
+.main div[data-testid="stRadio"] {
+  width: 100% !important;
+}
+
+.main div[data-testid="stRadio"] div[role="radiogroup"] {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 0.75rem !important;
+  width: 100% !important;
+}
+
+.main div[data-testid="stRadio"] div[role="radiogroup"] label {
+  flex: 1 1 auto !important;
+  min-width: 140px !important;
+  max-width: 260px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 0.6rem 1.25rem !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--border-color-default) !important;
+  background-color: var(--background-color-subtle) !important;
+  cursor: pointer !important;
+  transition: all 0.15s ease-in-out !important;
+  margin: 0 !important;
+}
+
+.main div[data-testid="stRadio"] div[role="radiogroup"] label:hover {
+  border-color: var(--color-primary) !important;
+  background-color: var(--color-primary-lighter) !important;
+}
+
+.main div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 2px 6px rgba(119, 93, 166, 0.25) !important;
+}
+
+.main div[data-testid="stRadio"] div[role="radiogroup"] label:has(input:checked) p {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Rhombus Sidebar Footer Card */
+.rhombus-sidebar-footer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--background-color-subtle);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color-subtle);
+  width: 100%;
+}
+
+.rhombus-sidebar-footer h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text-color-default);
+  margin-bottom: 0.25rem;
+}
+
+.rhombus-sidebar-footer p {
+  font-size: 0.775rem;
+  line-height: 1.4;
+  color: var(--text-color-muted);
+  margin-bottom: 0.5rem;
+}
+
+.rhombus-sidebar-footer a {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   TOPBAR (Rhombus 72px sticky header)
+   ========================================================================== */
+.rhombus-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 4rem;
+  background-color: var(--background-color-default);
+  border-bottom: 1px solid var(--border-color-default);
+  border-radius: var(--radius-md);
+  padding: 0.6rem 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-card);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.rhombus-search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--background-color-subtle);
+  border: 1px solid var(--border-color-subtle);
+  border-radius: var(--radius-md);
+  padding: 6px 12px;
+  width: 280px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.rhombus-search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 0.875rem;
+  color: var(--text-color-default);
+  width: 100%;
+}
+
+.rhombus-search-box input::placeholder {
+  color: var(--text-color-subtle);
+}
+
+.rhombus-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.rhombus-icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-color-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 50%;
+  position: relative;
+  transition: color 0.15s;
+}
+
+.rhombus-icon-btn:hover {
+  color: var(--text-color-default);
+}
+
+.rhombus-badge-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  border: 2px solid #ffffff;
+}
+
+.rhombus-user-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 10px;
+  border-radius: 30px;
+  background-color: var(--background-color-subtle);
+  border: 1px solid var(--border-color-subtle);
+}
+
+.rhombus-user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.775rem;
+}
+
+.rhombus-user-info {
+  line-height: 1.2;
+}
+
+.rhombus-user-name {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--text-color-default);
+}
+
+.rhombus-user-role {
+  font-size: 0.7rem;
+  color: var(--text-color-muted);
+}
+
+/* ==========================================================================
+   PAGE HERO / HEADER (Rhombus Title & Buttons)
+   ========================================================================== */
+.rhombus-page-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.rhombus-page-title {
+  font-size: 1.875rem !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  color: var(--text-color-default) !important;
+  margin-bottom: 0.25rem !important;
+}
+
+.rhombus-page-subtitle {
+  font-size: 0.9375rem !important;
+  color: var(--text-color-muted) !important;
+  margin-bottom: 0 !important;
+}
+
+/* ==========================================================================
+   CARDS & CONTAINERS (Rhombus White, 8px radius, 0 1px 4px shadow)
+   ========================================================================== */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+  background-color: var(--background-color-default) !important;
+  border-radius: var(--radius-md) !important;
+  border: 1px solid var(--border-color-subtle) !important;
+  box-shadow: var(--shadow-card) !important;
+  padding: 1.25rem !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin-bottom: 0.75rem !important;
+}
+
+div[data-testid="stVerticalBlockBorderWrapper"]:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.08) !important;
+}
+
+.rhombus-card {
+  background-color: var(--background-color-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color-subtle);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.rhombus-notice-card {
+  background-color: var(--background-color-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-color-subtle);
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.rhombus-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 0.85rem;
+  width: 100%;
+}
+
+.rhombus-card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--text-color-default);
+  margin-bottom: 0.2rem;
+  line-height: 1.2;
+}
+
+.rhombus-card-subtitle {
+  font-size: 0.8125rem;
+  color: var(--text-color-muted);
+  margin: 0;
+}
+
+.rhombus-card-menu {
+  color: var(--text-color-subtle);
+  font-size: 1.1rem;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   STAT CARDS & KPI GRID (Rhombus 4-Metric Equal-Height Grid with Progress Bars)
+   ========================================================================== */
+.rhombus-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  width: 100%;
+  margin-bottom: 1.75rem;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+@media (max-width: 1100px) {
+  .rhombus-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .rhombus-stat-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rhombus-stat-card {
+  background-color: var(--background-color-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-color-subtle);
+  padding: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 142px;
+}
+
+.rhombus-stat-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.rhombus-stat-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.rhombus-stat-value {
+  font-size: 1.35rem !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  color: var(--text-color-default) !important;
+  margin-bottom: 0.35rem !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rhombus-stat-label {
+  font-size: 0.8125rem !important;
+  color: var(--text-color-muted) !important;
+  line-height: 1.3 !important;
+  margin: 0 !important;
+  min-height: 2.1rem;
+}
+
+.rhombus-stat-icon-wrapper {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Icon backgrounds & colors */
+.bg-primary-subtle {
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary);
+}
+
+.bg-secondary-subtle {
+  background-color: var(--color-secondary-lighter);
+  color: var(--color-secondary);
+}
+
+.bg-info-subtle {
+  background-color: var(--color-info-lighter);
+  color: var(--color-info);
+}
+
+.bg-warning-subtle {
+  background-color: var(--color-warning-lighter);
+  color: var(--color-warning-dark);
+}
+
+/* Rhombus Bottom-Anchored Progress Bar */
+.rhombus-progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 1rem;
+  width: 100%;
+}
+
+.rhombus-progress-track {
+  flex-grow: 1;
+  height: 4px;
+  background-color: var(--border-color-default);
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.rhombus-progress-fill {
+  height: 100%;
+}
+
+.bg-primary-fill { background-color: var(--color-primary); }
+.bg-secondary-fill { background-color: var(--color-secondary); }
+.bg-info-fill { background-color: var(--color-info); }
+.bg-warning-fill { background-color: var(--color-warning); }
+
+.rhombus-progress-percent {
+  font-size: 0.75rem;
+  color: var(--text-color-muted);
+  font-weight: 600;
+  min-width: 32px;
+  text-align: right;
+}
+
+/* ==========================================================================
+   RESPONSIVE METRIC GRID (Planetary & Earth Metrics)
+   ========================================================================== */
+.rhombus-metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+  box-sizing: border-box;
+  align-items: stretch;
+}
+
+@media (max-width: 1024px) {
+  .rhombus-metric-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .rhombus-metric-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.rhombus-metric-card {
+  background-color: var(--background-color-default);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-color-subtle);
+  padding: 1rem 1.15rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  min-height: 92px;
+}
+
+.rhombus-metric-label {
+  color: #555555;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.rhombus-metric-value {
+  color: #202020;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.rhombus-metric-delta {
+  font-size: 0.75rem;
+  color: var(--color-primary);
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+
+/* ==========================================================================
+   BUTTONS (Rhombus Primary Purple & Outline White)
+   ========================================================================== */
+.stButton > button {
+  background-color: var(--color-primary) !important;
+  color: #ffffff !important;
+  border: 1px solid var(--color-primary) !important;
+  border-radius: var(--radius-md) !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  padding: 0.5rem 1.25rem !important;
+  height: 2.5rem !important;
+  box-shadow: none !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.stButton > button:hover {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+  box-shadow: 0 2px 6px rgba(119, 93, 166, 0.3) !important;
+}
+
+.stDownloadButton > button {
+  background-color: var(--background-color-default) !important;
+  color: var(--text-color-default) !important;
+  border: 1px solid var(--border-color-default) !important;
+  border-radius: var(--radius-md) !important;
+  font-weight: 500 !important;
+  font-size: 0.875rem !important;
+  padding: 0.5rem 1.25rem !important;
+  height: 2.5rem !important;
+  transition: all 0.15s ease-in-out !important;
+}
+
+.stDownloadButton > button:hover {
+  background-color: var(--background-color-subtle) !important;
+  border-color: var(--border-color-highlight) !important;
+}
+
+/* ==========================================================================
+   HIGH-CONTRAST METRICS OVERRIDE (Guaranteed Visibility)
+   ========================================================================== */
+div[data-testid="stMetric"] {
+  background-color: var(--background-color-default) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-card) !important;
+  border: 1px solid var(--border-color-subtle) !important;
+  padding: 1rem 1.25rem !important;
+  width: 100% !important;
+}
+
+div[data-testid="stMetric"] label[data-testid="stMetricLabel"] p {
+  color: #555555 !important;
+  font-size: 0.8125rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.04em !important;
+}
+
+div[data-testid="stMetric"] div[data-testid="stMetricValue"] {
+  color: #202020 !important;
+  font-size: 1.5rem !important;
+  font-weight: 700 !important;
+  line-height: 1.2 !important;
+}
+
+/* ==========================================================================
+   INPUTS & SELECTBOXES (Rhombus Form Controls)
+   ========================================================================== */
+div[data-baseweb="select"] > div,
+div[data-baseweb="input"] > div {
+  background-color: var(--background-color-default) !important;
+  border: 1px solid var(--border-color-default) !important;
+  border-radius: var(--radius-md) !important;
+  color: var(--text-color-default) !important;
+}
+
+div[data-baseweb="select"] > div:hover,
+div[data-baseweb="input"] > div:hover {
+  border-color: var(--border-color-highlight) !important;
+}
+
+div[data-baseweb="select"] > div:focus-within,
+div[data-baseweb="input"] > div:focus-within {
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 0 1px var(--color-primary) !important;
+}
+
+/* ==========================================================================
+   TABLES (Rhombus Striped Odd Rows, Clean Header)
+   ========================================================================== */
+.rhombus-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  color: var(--text-color-default);
+  white-space: nowrap;
+}
+
+.rhombus-table th {
+  padding: 12px 14px;
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-color-muted);
+  border-bottom: 1px solid var(--border-color-default);
+  font-size: 0.8125rem;
+}
+
+.rhombus-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color-subtle);
+  vertical-align: middle;
+}
+
+.rhombus-table tr:nth-child(odd) td {
+  background-color: var(--background-color-subtle);
+}
+
+.rhombus-table tr:hover td {
+  background-color: var(--color-primary-lighter);
+}
+
+/* Badges */
+.rhombus-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.725rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.rhombus-badge-primary {
+  background-color: var(--color-primary-lighter);
+  color: var(--color-primary);
+}
+
+.rhombus-badge-secondary {
+  background-color: var(--color-secondary-lighter);
+  color: var(--color-secondary-dark);
+}
+
+.rhombus-badge-info {
+  background-color: var(--color-info-lighter);
+  color: var(--color-info-dark);
+}
+
+.rhombus-badge-warning {
+  background-color: var(--color-warning-lighter);
+  color: var(--color-warning-dark);
+}
+
+/* Clean Tabs (Streamlit Tabs Styled like Rhombus Pill/Line Tabs) */
+div[data-testid="stTabs"] button[role="tab"] {
+  font-size: 0.9375rem !important;
+  font-weight: 500 !important;
+  color: var(--text-color-muted) !important;
+  padding: 0.5rem 1rem !important;
+  border: none !important;
+  border-bottom: 2px solid transparent !important;
+  background: transparent !important;
+}
+
+div[data-testid="stTabs"] button[role="tab"][aria-selected="true"] {
+  color: var(--color-primary) !important;
+  border-bottom: 2px solid var(--color-primary) !important;
+  font-weight: 600 !important;
+}
+
+/* Horizontal Blocks & Chart containment */
+div[data-testid="stHorizontalBlock"] {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.stPlotlyChart, div[data-testid="stPlotlyChart"] {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+iframe {
+  max-width: 100% !important;
+}
+
+/* ==========================================================================
+   EXPANDERS (Rhombus Accordion & Sensitivities Controls)
+   ========================================================================== */
+div[data-testid="stExpander"] {
+  background-color: var(--background-color-default) !important;
+  border: 1px solid var(--border-color-subtle) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-card) !important;
+  margin-bottom: 1.25rem !important;
+  overflow: hidden !important;
+  width: 100% !important;
+}
+
+div[data-testid="stExpander"] details {
+  border: none !important;
+  background: transparent !important;
+}
+
+div[data-testid="stExpander"] details summary {
+  padding: 0.85rem 1.25rem !important;
+  font-weight: 600 !important;
+  font-size: 0.9375rem !important;
+  color: var(--text-color-default) !important;
+  border-radius: var(--radius-md) !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.75rem !important;
+}
+
+div[data-testid="stExpander"] details summary:hover {
+  background-color: var(--background-color-subtle) !important;
+  color: var(--color-primary) !important;
+}
+
+div[data-testid="stExpander"] details summary svg {
+  flex-shrink: 0 !important;
+  width: 1.25rem !important;
+  height: 1.25rem !important;
+  color: var(--color-primary) !important;
+}
+
+div[data-testid="stExpander"] details summary p,
+div[data-testid="stExpander"] details summary span {
+  font-size: 0.9375rem !important;
+  font-weight: 600 !important;
+  color: var(--text-color-default) !important;
+  margin: 0 !important;
+}
+
+div[data-testid="stExpander"] details div[data-testid="stExpanderDetails"] {
+  padding: 1.25rem !important;
+  border-top: 1px solid var(--border-color-subtle) !important;
+  background-color: var(--background-color-default) !important;
+}
+
+/* Ensure columns allow flex shrinking and never force horizontal overflow */
+div[data-testid="column"] {
+  min-width: 0 !important;
+  box-sizing: border-box !important;
+}

@@ -1,0 +1,44 @@
+{
+  "profiles": {
+    "lonar_crater": {
+      "name": "Lonar Crater (Earth) - SRTM Radial Transect",
+      "source": "NASA SRTM (Shuttle Radar Topography Mission) 30m Global DEM",
+      "units": "meters",
+      "distance_km": [0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.0],
+      "elevation_m": [512.0, 518.0, 526.0, 562.0, 545.0, 492.0, 480.0, 478.0, 479.0, 482.0, 510.0, 558.0, 532.0, 519.0, 514.0, 510.0],
+      "description": "Trans-crater topographic section showing outer ejecta flank, elevated crater rim crest (562m), steep inner crater wall descending to endorheic soda lake floor (478m), and opposite rim."
+    },
+    "tso_kar": {
+      "name": "Tso Kar Basin (Earth) - Periglacial Valley Transect",
+      "source": "NASA SRTM 30m / Copernicus DEM",
+      "units": "meters",
+      "distance_km": [0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 12.0],
+      "elevation_m": [4920.0, 4810.0, 4720.0, 4610.0, 4550.0, 4532.0, 4530.0, 4531.0, 4536.0, 4580.0, 4680.0, 4820.0, 4980.0],
+      "description": "Cross-valley section of the high-altitude Ladakh Changthang plateau showing surrounding periglacial ridges dropping down into the flat hypersaline playa and lake basin at 4530m."
+    },
+    "sambhar_lake": {
+      "name": "Sambhar Salt Lake (Earth) - Playa Flat Transect",
+      "source": "NASA SRTM 30m Global DEM",
+      "units": "meters",
+      "distance_km": [0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0],
+      "elevation_m": [375.0, 368.0, 364.0, 361.0, 360.5, 360.0, 360.2, 360.8, 362.0, 366.0, 372.0],
+      "description": "Planar cross-section illustrating extreme low relief and flatness (< 2m vertical gradient across 10 km) characteristic of endorheic evaporite salt pans."
+    },
+    "lunar_south_pole_shackleton": {
+      "name": "Shackleton Crater (Moon) - LOLA Radial Profile",
+      "source": "NASA LOLA (Lunar Orbiter Laser Altimeter) Polar 20m/px DEM",
+      "units": "meters",
+      "distance_km": [0.0, 2.0, 4.0, 6.0, 8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 20.0, 22.0, 24.0, 26.0],
+      "elevation_m": [450.0, 780.0, 1250.0, 400.0, -850.0, -2100.0, -2950.0, -2920.0, -2100.0, -900.0, 350.0, 1220.0, 810.0, 520.0],
+      "description": "LOLA laser altimetry transect showing the rim crest (+1250m relative to datum), dramatic 30-degree inner walls plunging 4.2 km into permanent darkness (PSR floor at -2950m), and opposite crest."
+    },
+    "mars_jezero_delta": {
+      "name": "Jezero Delta Front (Mars) - MOLA / HiRISE DTM Profile",
+      "source": "NASA MOLA MEGDR & HiRISE DTM (Mars 2020 Landing Site)",
+      "units": "meters",
+      "distance_km": [0.0, 0.5, 1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0],
+      "elevation_m": [-2530.0, -2528.0, -2525.0, -2520.0, -2490.0, -2465.0, -2458.0, -2454.0, -2451.0, -2448.0, -2440.0, -2432.0, -2415.0],
+      "description": "Topographic profile showing Perseverance rover traverse across flat basaltic floor (-2530m) approaching and ascending the steep 65m erosional delta front scarp onto the delta topset."
+    }
+  }
+}

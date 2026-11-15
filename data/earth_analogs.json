@@ -1,0 +1,458 @@
+{
+  "analogs": [
+    {
+      "id": "tso_kar",
+      "name": "Tso Kar Basin",
+      "region": "Changthang Plateau, Ladakh",
+      "country": "India",
+      "coordinates": {
+        "latitude": 33.3083,
+        "longitude": 78.0102
+      },
+      "elevation_m": 4530,
+      "relief_m": 850,
+      "mean_slope_deg": 6.8,
+      "terrain_roughness_rms_m": 0.32,
+      "biome": "Alpine Cold Desert / High-Altitude Saline Wetland",
+      "koppen_climate": "ET (Tundra / Alpine Desert)",
+      "temperature_c": {
+        "annual_mean": -1.5,
+        "summer_max": 24.0,
+        "winter_min": -35.0,
+        "diurnal_swing": 32.0
+      },
+      "annual_precipitation_mm": 115.0,
+      "atmospheric_pressure_hpa": 585.0,
+      "uv_index_max": 14.5,
+      "ph_level": 9.2,
+      "salinity_ppt": 180.0,
+      "geology": {
+        "lithology_type": "Periglacial Lacustrine Evaporite",
+        "rock_units": "Quaternary alluvium, lacustrine clay-silt deposits, crystalline salt crusts",
+        "dominant_minerals": [
+          "Gypsum (CaSO4·2H2O)",
+          "Thenardite (Na2SO4)",
+          "Mirabilite (Na2SO4·10H2O)",
+          "Halite (NaCl)",
+          "Borax / Tincalconite",
+          "Smectite Clays"
+        ],
+        "geomorphic_features": [
+          "Patterned ground permafrost freeze-thaw polygons",
+          "Solifluction lobes",
+          "Evaporite playa flats",
+          "Sub-lacustrine springs",
+          "Ventifacts and deflation gravel lags"
+        ]
+      },
+      "planetary_analog_relevance": {
+        "primary_target": "Mars Paleolakes & Periglacial Regions",
+        "analog_mission_targets": ["Mars 2020 Perseverance (Jezero Crater)", "Curiosity (Gale Crater)", "Phoenix Lander (Polar Polygonal Terrain)"],
+        "analog_processes": [
+          "Cold-climate evaporative desiccation of saline paleolakes",
+          "Cryogenic sulfate and borate mineral precipitation",
+          "Periglacial polygon formation under extreme freeze-thaw cycling",
+          "Astrobiological biosignature preservation in cryogenic evaporites"
+        ],
+        "fidelity_summary": "High fidelity for Martian cold-climate lacustrine desiccation and cryogenic permafrost polygon dynamics. High UV and low atmospheric pressure provide realistic Mars surface stressors."
+      },
+      "data_confidence": {
+        "topography": 0.95,
+        "temperature": 0.90,
+        "geology": 0.95,
+        "mineralogy": 0.90,
+        "overall": 0.92,
+        "verification_status": "In-situ field surveyed (ISRO / Geological Survey of India / Wadia Institute)"
+      },
+      "references": [
+        {
+          "citation": "Bhattacharya et al. (2021). Astrobiological potential of high-altitude hypersaline Tso Kar lake, Ladakh, India. Planetary and Space Science, 205, 105280.",
+          "doi": "https://doi.org/10.1016/j.pss.2021.105280"
+        },
+        {
+          "citation": "Ray et al. (2021). Morphological and mineralogical study of Ladakh as a Martian analog. Current Science, 120(5), 844-855.",
+          "doi": "https://doi.org/10.18520/cs/v120/i5/844-855"
+        },
+        {
+          "citation": "ISRO Space Applications Centre (2022). High-Altitude Planetary Analog Missions in Ladakh: Geomorphic and Astrobiological Atlas.",
+          "url": "https://www.isro.gov.in"
+        }
+      ]
+    },
+    {
+      "id": "lonar_crater",
+      "name": "Lonar Crater",
+      "region": "Buldhana District, Maharashtra",
+      "country": "India",
+      "coordinates": {
+        "latitude": 19.9760,
+        "longitude": 76.5070
+      },
+      "elevation_m": 563,
+      "relief_m": 150,
+      "mean_slope_deg": 14.5,
+      "terrain_roughness_rms_m": 0.58,
+      "biome": "Semi-Arid Basaltic Impact Basin / Soda Lake",
+      "koppen_climate": "BSh (Hot Semi-Arid)",
+      "temperature_c": {
+        "annual_mean": 26.2,
+        "summer_max": 43.5,
+        "winter_min": 11.0,
+        "diurnal_swing": 16.5
+      },
+      "annual_precipitation_mm": 780.0,
+      "atmospheric_pressure_hpa": 952.0,
+      "uv_index_max": 11.2,
+      "ph_level": 10.3,
+      "salinity_ppt": 32.0,
+      "geology": {
+        "lithology_type": "Hypervelocity Impact Crater in Continental Flood Basalt",
+        "rock_units": "Deccan Traps tholeiitic basalts (~65 Ma), impact ejecta blanket, suevite, allochthonous breccia",
+        "dominant_minerals": [
+          "Maskelynite (Shock-diaplectic plagioclase glass)",
+          "Shocked Plagioclase Feldspar",
+          "Clinopyroxene (Augite)",
+          "Titanomagnetite",
+          "Impact melt glass & spherules",
+          "Secondary smectite / saponite clays"
+        ],
+        "geomorphic_features": [
+          "Simple crater morphology (1.88 km diameter, 150 m depth)",
+          "Overturned flap on crater rim",
+          "Continuous hummocky ejecta blanket extending 1.5 crater radii",
+          "Crater wall gully incised drainage",
+          "Endorheic hyper-alkaline crater lake"
+        ]
+      },
+      "planetary_analog_relevance": {
+        "primary_target": "Lunar Mare & Martian Basaltic Impact Structures",
+        "analog_mission_targets": ["Artemis III/IV Lunar South Pole Highland/Mare Boundaries", "Perseverance (Jezero Crater basaltic floor & ejecta)", "Lunar Reconnaissance Orbiter (LROC)"],
+        "analog_processes": [
+          "Hypervelocity impact cratering mechanics in pristine basaltic targets",
+          "Solid-state diaplectic phase transformation (Maskelynite formation at 25-45 GPa)",
+          "Post-impact hydrothermal alteration of basaltic ejecta",
+          "Microbial colonization of basaltic impact-melt glass under alkaline conditions"
+        ],
+        "fidelity_summary": "Exceptional, globally unique terrestrial analog. One of only four known hypervelocity impact structures on Earth in basaltic bedrock. Directly models lunar mare and Martian volcanic crater morphology and shock petrology."
+      },
+      "data_confidence": {
+        "topography": 0.98,
+        "temperature": 0.95,
+        "geology": 0.99,
+        "mineralogy": 0.98,
+        "overall": 0.97,
+        "verification_status": "Extensively verified by drilling, micro-Raman, TEM, and thermal infrared spectroscopy"
+      },
+      "references": [
+        {
+          "citation": "Fredriksson, K. et al. (1973). Lonar Lake, India: An impact crater in basalt. Science, 180(4088), 862-864.",
+          "doi": "https://doi.org/10.1126/science.180.4088.862"
+        },
+        {
+          "citation": "Wright, S. P. et al. (2011). Thermal infrared spectroscopy of shocked basalt at Lonar Crater, India: Analogs for Martian crater ejecta. J. Geophys. Res. Planets, 116(E9).",
+          "doi": "https://doi.org/10.1029/2011JE003885"
+        },
+        {
+          "citation": "Kieffer, S. W. (1977). Impact conditions required for formation of melt and maskelynite in basalt: Lonar Crater, India. The Moon, 16(3), 301-332.",
+          "doi": "https://doi.org/10.1007/BF00570377"
+        }
+      ]
+    },
+    {
+      "id": "sambhar_lake",
+      "name": "Sambhar Salt Lake",
+      "region": "Jaipur & Nagaur Districts, Rajasthan",
+      "country": "India",
+      "coordinates": {
+        "latitude": 26.9150,
+        "longitude": 75.0080
+      },
+      "elevation_m": 361,
+      "relief_m": 45,
+      "mean_slope_deg": 1.2,
+      "terrain_roughness_rms_m": 0.12,
+      "biome": "Inland Saline Playa / Arid Wetland",
+      "koppen_climate": "BWh (Hot Arid Desert / Semi-Arid)",
+      "temperature_c": {
+        "annual_mean": 25.8,
+        "summer_max": 46.0,
+        "winter_min": 6.0,
+        "diurnal_swing": 18.0
+      },
+      "annual_precipitation_mm": 410.0,
+      "atmospheric_pressure_hpa": 974.0,
+      "uv_index_max": 12.0,
+      "ph_level": 9.8,
+      "salinity_ppt": 270.0,
+      "geology": {
+        "lithology_type": "Evaporite Saline Playa Basin",
+        "rock_units": "Proterozoic Aravalli metamorphic basement, thick Quaternary saline lacustrine silt and mud",
+        "dominant_minerals": [
+          "Halite (NaCl)",
+          "Thenardite (Na2SO4)",
+          "Gypsum (CaSO4·2H2O)",
+          "Calcite (CaCO3)",
+          "Dolomite (CaMg(CO3)2)",
+          "Montmorillonite Clay"
+        ],
+        "geomorphic_features": [
+          "Extensive planar salt-crust playa (230 sq km)",
+          "Desiccation mud-cracks and salt tepee structures",
+          "Aeolian sand sheet encroaching dunes",
+          "Ephemeral feeder stream deltaic fans"
+        ]
+      },
+      "planetary_analog_relevance": {
+        "primary_target": "Martian Chloride / Sulfate Evaporite Deposits",
+        "analog_mission_targets": ["Mars Odyssey THEMIS (Chloride plains)", "Mars Reconnaissance Orbiter CRISM (Terra Sirenum)", "Perseverance (Jezero marginal carbonate-bearing rocks)"],
+        "analog_processes": [
+          "Evaporative concentration and fractional crystallization in terminal basins",
+          "Biomolecule and lipid entrapment in fluid inclusions within halite crystals",
+          "Seasonal moisture cycling on hyper-saline crust integrity",
+          "Pigmented haloarchaeal survival strategies under high UV exposure"
+        ],
+        "fidelity_summary": "Strong geomorphic and geochemical analog for ancient Martian chloride-bearing plains and lacustrine shoreline evaporites where past biological markers may be entrained in halite crystals."
+      },
+      "data_confidence": {
+        "topography": 0.94,
+        "temperature": 0.96,
+        "geology": 0.92,
+        "mineralogy": 0.94,
+        "overall": 0.94,
+        "verification_status": "Geological Survey of India sediment core verified"
+      },
+      "references": [
+        {
+          "citation": "Sinha, R., & Raymahashay, B. C. (2004). Evaporite mineralogy and geochemical evolution of Sambhar Lake, Rajasthan. J. Geol. Soc. India, 64, 417-424.",
+          "doi": "https://www.geosocindia.org"
+        },
+        {
+          "citation": "Yadav, A. et al. (2022). Halophilic and haloalkaliphilic microbial diversity of Sambhar Salt Lake and its astrobiological implications. Extremophiles, 26(3), 21.",
+          "doi": "https://doi.org/10.1007/s00203-022-02941-8"
+        }
+      ]
+    },
+    {
+      "id": "atacama_desert",
+      "name": "Atacama Desert (Yungay Core)",
+      "region": "Antofagasta Region",
+      "country": "Chile",
+      "coordinates": {
+        "latitude": -24.0833,
+        "longitude": -69.8667
+      },
+      "elevation_m": 1050,
+      "relief_m": 320,
+      "mean_slope_deg": 3.4,
+      "terrain_roughness_rms_m": 0.22,
+      "biome": "Hyper-Arid Subtropical Desert",
+      "koppen_climate": "BWk (Cold Arid Desert)",
+      "temperature_c": {
+        "annual_mean": 17.0,
+        "summer_max": 32.0,
+        "winter_min": 1.0,
+        "diurnal_swing": 25.0
+      },
+      "annual_precipitation_mm": 1.5,
+      "atmospheric_pressure_hpa": 898.0,
+      "uv_index_max": 15.0,
+      "ph_level": 7.8,
+      "salinity_ppt": 120.0,
+      "geology": {
+        "lithology_type": "Perchlorate and Nitrate-Enriched Hyper-Arid Regolith",
+        "rock_units": "Cenozoic alluvial-lacustrine gravels, volcanic ash ignimbrite layers, massive nitrate ore deposits (caliche)",
+        "dominant_minerals": [
+          "Perchlorate (ClO4-) & Chlorate Salts",
+          "Nitratine (NaNO3)",
+          "Anhydrite / Gypsum (CaSO4)",
+          "Halite (NaCl)",
+          "Smectite / Illite",
+          "Hematite / Fe-oxides"
+        ],
+        "geomorphic_features": [
+          "Dry mud crack polygons",
+          "Gypsum duricrust crusts",
+          "Wind-sculpted yardangs and lag gravels",
+          "Paleochannels inactive for millions of years"
+        ]
+      },
+      "planetary_analog_relevance": {
+        "primary_target": "Martian Hyper-Arid Oxidized Regolith",
+        "analog_mission_targets": ["Viking Landers", "Phoenix Mars Lander (WCL)", "Curiosity (SAM instrument)", "Perseverance"],
+        "analog_processes": [
+          "Atmospheric deposition and preservation of perchlorate salts",
+          "Dry limit of microbial cellular replication (aw < 0.60)",
+          "Photocatalytic organic degradation under intense solar UV irradiation",
+          "Subsurface endolithic colonisation within translucent halite rocks"
+        ],
+        "fidelity_summary": "Gold standard terrestrial analog for the dry limit of life, regolith perchlorates, and oxidative decomposition processes on the Martian surface."
+      },
+      "data_confidence": {
+        "topography": 0.97,
+        "temperature": 0.98,
+        "geology": 0.98,
+        "mineralogy": 0.97,
+        "overall": 0.98,
+        "verification_status": "Extensively documented across 30+ NASA & ESA field campaigns"
+      },
+      "references": [
+        {
+          "citation": "Navarro-González, R. et al. (2003). Mars-like soils in the Atacama Desert, Chile, and the dry limit of microbial life. Science, 302(5647), 1018-1021.",
+          "doi": "https://doi.org/10.1126/science.1089143"
+        },
+        {
+          "citation": "Parro, V. et al. (2011). SOLID3: A multiplex immunoassay biosensor for life detection in the Atacama Desert. Astrobiology, 11(10), 969-996.",
+          "doi": "https://doi.org/10.1089/ast.2011.0653"
+        }
+      ]
+    },
+    {
+      "id": "mcmurdo_valleys",
+      "name": "McMurdo Dry Valleys (University Valley)",
+      "region": "Victoria Land",
+      "country": "Antarctica",
+      "coordinates": {
+        "latitude": -77.8500,
+        "longitude": 160.7167
+      },
+      "elevation_m": 1650,
+      "relief_m": 720,
+      "mean_slope_deg": 12.8,
+      "terrain_roughness_rms_m": 0.44,
+      "biome": "Polar Cold Hyper-Arid Desert",
+      "koppen_climate": "EF (Ice Cap / Polar Desert)",
+      "temperature_c": {
+        "annual_mean": -23.0,
+        "summer_max": -3.0,
+        "winter_min": -52.0,
+        "diurnal_swing": 12.0
+      },
+      "annual_precipitation_mm": 5.0,
+      "atmospheric_pressure_hpa": 815.0,
+      "uv_index_max": 4.5,
+      "ph_level": 8.1,
+      "salinity_ppt": 85.0,
+      "geology": {
+        "lithology_type": "Dry Polar Permafrost and Glacial Tills",
+        "rock_units": "Beacon Supergroup quartzose sandstones, Ferrar Dolerite sills, relict dry till blankets",
+        "dominant_minerals": [
+          "Quartz",
+          "Pyroxene (Dolerite)",
+          "Plagioclase Feldspar",
+          "Gypsum / Anhydrite efflorescences",
+          "Calcite coatings",
+          "Halite traces"
+        ],
+        "geomorphic_features": [
+          "Dry permafrost (dry-frozen active layer with ice table at depth)",
+          "Sand-wedge thermal contraction polygons",
+          "Ventifacts carved by katabatic winds",
+          "Patterned ground ground-ice sublimation features"
+        ]
+      },
+      "planetary_analog_relevance": {
+        "primary_target": "Martian Polar Layered Deposits & Permafrost Regolith",
+        "analog_mission_targets": ["Phoenix Mars Lander", "ExoMars Rosalind Franklin (Drill)", "Mars Reconnaissance Orbiter (HiRISE)"],
+        "analog_processes": [
+          "Ice sublimation and vapor diffusion through cryogenic porous regolith",
+          "Cryptoendolithic microbial communities sheltered inside porous sandstones",
+          "Katabatic wind erosion creating ventifacts and lag gravels",
+          "Deep cold permafrost coring and drill mechanical testing"
+        ],
+        "fidelity_summary": "Top terrestrial analog for sub-surface ground ice dynamics, thermal contraction crack polygons, and extreme cold-dry limits on Mars polar plains."
+      },
+      "data_confidence": {
+        "topography": 0.96,
+        "temperature": 0.97,
+        "geology": 0.96,
+        "mineralogy": 0.95,
+        "overall": 0.96,
+        "verification_status": "NSF Long Term Ecological Research (LTER) verified"
+      },
+      "references": [
+        {
+          "citation": "McKay, C. P. et al. (1998). Antarctic dry valleys as a model for Martian polar terrain. Planetary and Space Science, 46(2-3), 209-224.",
+          "doi": "https://doi.org/10.1016/S0032-0633(97)00159-2"
+        },
+        {
+          "citation": "Marchant, D. R., & Head, J. W. (2007). Antarctic Dry Valleys: Microclimate zonation, variable geomorphic processes, and implications for assessing climate change on Mars. Icarus, 192(1), 187-222.",
+          "doi": "https://doi.org/10.1016/j.icarus.2007.06.018"
+        }
+      ]
+    },
+    {
+      "id": "iceland_volcanic",
+      "name": "Iceland Basalt Provinces (Askja & Dyngjufjöll)",
+      "region": "Northern Volcanic Zone",
+      "country": "Iceland",
+      "coordinates": {
+        "latitude": 65.0333,
+        "longitude": -16.7500
+      },
+      "elevation_m": 1100,
+      "relief_m": 610,
+      "mean_slope_deg": 11.2,
+      "terrain_roughness_rms_m": 0.65,
+      "biome": "Volcanic Sub-Arctic Desert",
+      "koppen_climate": "ET (Tundra / Subpolar)",
+      "temperature_c": {
+        "annual_mean": -1.2,
+        "summer_max": 16.0,
+        "winter_min": -22.0,
+        "diurnal_swing": 14.0
+      },
+      "annual_precipitation_mm": 650.0,
+      "atmospheric_pressure_hpa": 875.0,
+      "uv_index_max": 5.0,
+      "ph_level": 6.8,
+      "salinity_ppt": 2.5,
+      "geology": {
+        "lithology_type": "Tholeiitic Flood Basalts, Calderas & Subglacial Palagonite",
+        "rock_units": "Holocene basaltic lava fields (a'a and pahoehoe), palagonite tuffs (hyaloclastites), pumice tephra layers",
+        "dominant_minerals": [
+          "Olivine (Forsterite)",
+          "Clinopyroxene (Augite)",
+          "Calc-alkali Plagioclase (Labradorite)",
+          "Titanomagnetite",
+          "Palagonite (altered basaltic sideromelane glass)",
+          "Zeolites & secondary smectites"
+        ],
+        "geomorphic_features": [
+          "Nested collapse calderas",
+          "Extensive basaltic lava flows with collapse pits and lava tubes",
+          "Subglacial hyaloclastite ridges (tindars and tuyas)",
+          "Hydrothermal explosion vents and solfataras"
+        ]
+      },
+      "planetary_analog_relevance": {
+        "primary_target": "Lunar Mare & Martian Basaltic Volcanic Plains",
+        "analog_mission_targets": ["Apollo Field Training (1965/1967)", "NASA SAND-E Project", "Artemis Lunar Surface Mobility", "Mars 2020 / Curiosity (Gale basaltic sandstones)"],
+        "analog_processes": [
+          "Effusive basaltic volcanism and lava tube formation (subsurface astronaut shelter analogs)",
+          "Palagonitization of basaltic glass via volcano-ice hydrothermal interactions",
+          "Aeolian transport and physical sorting of basaltic sand grains",
+          "Geological field training and autonomous rover traverse testing"
+        ],
+        "fidelity_summary": "Historical and active testbed for Apollo and Artemis astronaut geology training. High mineralogical fidelity for unevolved basaltic crusts on both Moon and Mars."
+      },
+      "data_confidence": {
+        "topography": 0.98,
+        "temperature": 0.98,
+        "geology": 0.99,
+        "mineralogy": 0.98,
+        "overall": 0.98,
+        "verification_status": "NASA Apollo historical training site & NASA PSTAR program verified"
+      },
+      "references": [
+        {
+          "citation": "Mangold, N. et al. (2011). Hydrothermal alteration in basaltic environments on Mars and Earth: Lessons from Iceland. Astrobiology, 11(8), 755-772.",
+          "doi": "https://doi.org/10.1089/ast.2010.0559"
+        },
+        {
+          "citation": "Stockstill-Cahill, K. R. et al. (2012). Palagonitization of basaltic tephra in Iceland: An analog for Martian surface alteration. J. Geophys. Res., 117.",
+          "doi": "https://doi.org/10.1029/2012JE004128"
+        }
+      ]
+    }
+  ]
+}
